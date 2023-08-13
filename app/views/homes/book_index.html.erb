@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Bookers</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href= "" >
+ </head>
+ <body>
+   <p id="notice"></p>
+
+  <h1>Books</h1>
+
+ <table>
+  <thead>
+  <tr>
+   <th>Title</th>
+   <th>Body</th>
+  </tr>
+  </thead>
+ <tbody>
+  <tr>
+    <td>たのしいRuby</td>
+    <td>Rubyの入門におすすめです</td>
+    <td><a class="show " href= ""></a></td>
+    <td><a class="edit " href= ""></a></td>
+    <td><a data-confirm="Are you sure?" class="" rel="" data-method="" href="">Destroy</a></td>
+  <tr>
+    <td>入門Git</td>
+    <td>gitについての基本操作から内部構造まで解説してくれます</td>
+ 　　<td><a class="show " href= ""></a></td>
+    <td><a class="edit " href= ""></a></td>
+    <td><a data-confirm="Are you sure?" class="" rel="" data-method="" href="">Destroy</a></td>
+  </tr>
+　<tr>
+    <td>アルゴリズム図鑑</td>
+    <td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
+ 　　<td><a class="show " href= ""></a></td>
+    <td><a class="edit " href= ""></a></td>
+　  <td><a data-confirm="Are you sure?" class="" rel="" data-method="" href="">Destroy</a></td>
+　</tr>
+　<tr>
+　　<td>達人プログラマー</td>
+    <td>プログラマ入門者は必読！</td>
+　  <td><a class="show " href= ""></a></td>
+    <td><a class="edit " href= ""></a></td>
+    <td><a data-confirm="Are you sure?" class="" rel="" data-method="" href="">Destroy</a></td>
+  </tr>
+  <tr>
+    <td>gre</td>
+    <td>rge</td>
+    <td><a class="show " href= ""></a></td>
+    <td><a  class="edit " href= ""></a></td>
+    <td><a data-confirm="Are you sure?" class="" rel="" data-method="" href="">Destroy</a></td>
+  </tr>
+  <tr>
+    <td>xaiuxe</td>
+    <td>eoxxe</td>
+    <td><a class="show " href= ""></a></td>
+    <td><a  class="edit " href= ""></a></td>
+    <td><a data-confirm="Are you sure?" class="" rel="" data-method="" href="">Destroy</a></td>
+  </tr>
+ </tbody>
+</table>
+
+ <h2>New book</h2>
+<form class="new book">
+ <div class="error_explanation">
+  <h2>error prohibited this book from being saved.</h2>
+  <ul>
+   <li>
+    ::marker
+    "Body can't be blank"
+   </li>
+  </ul>
+ </div>
+ <div class="field">
+  <p>Title<p>
+ </div>
+  <div class="field">
+  <p>Body</p>
+  <textarea class="body">
+</textarea>
+ </div>
+ <div class="actions">
+  <input type="submit" value="Create Book">
+ </div>
+</from>
+ </body>
+</html>
