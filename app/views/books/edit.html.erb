@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href= "">
+   <title>Bookers</title>
+   <!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href= "">
+   <title>Bookers</title>
+
+ <div class="header-logo">
+   <a href="/"></a>
+ </head>
+ <body>
+   <h1>Editing Book</h1>
+
+ <div class="field">
+    <label for="book_title">Title</label>
+</div>
+
+  <div class="field">
+    <label for="book_body">Body</label>
+  </div>
+
+  <div class="actions">
+    <input type="submit" name="commit" />
+  </div>
+</form>
+
+<a class="show" href="">Show</a>
+<a class="back" href="">Back</a>
+
+  </body>
+</html>
+
+ <div class="header-logo">
+   <a href="/"></a>
+ </head>
+ <body>
+   <h1>Editing Book</h1>
+
+<%= form_with book: book.edit do |f| %>
+ <div class="field">
+    <label for="book_title">Title</label>
+ <%= f.book_field :title %>
+</div>
+
+  <div class="field">
+    <label for="book_body">Body</label>
+ <%= f.book_area :body %>
+  </div>
+
+  <div class="actions">
+    <input type="submit" name="Update Book" />
+   <%= f.submit 'Update Book' %>
+<% end %>
+  </div>
+</form>
+
+<a class="show" href="">Show</a>
+<a class="back" href="">Back</a>
+
+  </body>
+</html>
