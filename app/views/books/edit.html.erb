@@ -41,16 +41,16 @@
  </head>
  <body>
    <h1>Editing Book</h1>
-
-<%= form_with book: book.edit do |f| %>
+　<form class="new_book" id="new_book" action="/books" accept-charset="UTF-8" method="post"><input name="utf8">
+<%= form_with book:@book do |f| %>
  <div class="field">
     <label for="book_title">Title</label>
- <%= f.book_field :title %>
+ <%= f.text_field :title %>
 </div>
 
   <div class="field">
     <label for="book_body">Body</label>
- <%= f.book_area :body %>
+ <%= f.text_area :body %>
   </div>
 
   <div class="actions">

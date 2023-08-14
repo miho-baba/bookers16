@@ -4,24 +4,26 @@
   <meta charset="UTF-8" />
   <link rel="stylesheet" href= "show.scss">
   <title>Bookers</title>
+
  <div class="header-logo">
    <a href="/"></a>
  </head>
  <body>
    <p id="notice">Book was successfully updated.</p>
 
+ <%= form_with model:@book do |f| %>
 <p>
 <strong>Title:</strong>
-
+<%= f.text_field :title %>
 </p>
 
 <p>
-  <strong>Body:</strong>
-
+ <strong>Body:</strong>
+ <%= f.text_area :body %>
 </p>
-
+ <% end %>
 <a class="edit" href="edit">Edit</a>
 <a class="back" href="/">Back</a>
 
-  </body>
+ </body>
 </html>

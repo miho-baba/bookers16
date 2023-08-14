@@ -20,205 +20,35 @@
   </thead>
  <tbody>
  <% @books.each do |book| %>
-   <td><%= book.content %></td>
+   <td><%= book.title %></td>
+   <td><%= book.body %></td>
+   <td><%= link_to 'Show', "/books/#{book.id}" %></td>
+   <td><%= link_to 'Edit', "/books/#{book.id}" %></td>
+   <td><%= link_to 'Destroy', "/books/#{book.id}" %></td>
  <% end %>
- <tr>
-  <td>文章</td>
-  <td>文章</td>
-  <td>
-   <a class="show" href="books">Show</a>
-  </td>
-  <td>
-   <a class="edit" href="books/edit">Edit</a>
-  </td>
-  <td>
-   <a data-confirm="Are you sure?" class="destroy" rel="nofollow" data-method="delete" href="/books">Destroy</a>
-   </td>
-  </td>
-  </tr>
-  <tr>
-   <td>文章</td>
-   <td>文章</td>
-   <td>
-    <a class="show" href="/books">Show</a>
-   </td>
-   <td>
-     <a class="edit" href="/books/edit">Edit</a>
-   </td>
-   <td>
-   <a data-confirm="Are you sure?" class="destroy" rel="nofollow" data-method="delete" href="/books">Destroy</a>
-   </td>
-   </tr>
-   <tr>
-   <td>文章</td>
-   <td>文章</td>
-   <td><a class="show" href="/books">Show</a>
-   </td>
-   <td><a class="edit" href="/books/edit">Edit</a>
-   </td>
-  <td><a data-confirm="Are you sure?" class="destroy" rel="nofollow" data-method="delete" href="/books">Destroy</a>
-  </td>
-  </tr>
-  <tr>
-   <td>文章</td>
-   <td>文章</td>
-   <td>
-    <a class="show" href="/books">Show</a>
-   </td>
-  　<td>
-  　<a class="edit" href="/books/edit">Edit</a>
-  　</td>
-  　<td>
-  　 <a data-confirm="Are you sure?" class="destroy" rel="nofollow" data-method="delete" href="/books">Destroy</a>
-   </td>
-   </tr>
-  <tr>
-   <td>文章</td>
-   <td>文章</td>
-   <td>
-    <a class="show" href="/books">Show</a>
-   </td>
-   <td>
-   <a class="edit" href="/books/edit">Edit</a>
-   </td>
-  <td>
-   <a data-confirm="Are you sure?" class="destroy" rel="nofollow" data-method="delete" href="/books">Destroy</a>
-  </td>
- </tr>
-<tr>
- <td>文章</td>
- <td>文章</td>
- <td>
-  <a class="show" href="/books">Show</a>
- </td>
-　<td>
-　<a class="edit" href="/books/edit">Edit</a>
-　</td>
-　<td>
-　 <a data-confirm="Are you sure?" class="destroy" rel="nofollow" data-method="delete" href="/books">Destroy</a>
-　</td>
-</tr>
-<tr>
- <td>文章</td>
- <td>文章</td>
- <td>
-  <a class="show" href="/books">Show</a>
- </td>
- <td>
-  <a class="edit" href="/books/edit">Edit</a>
- </td>
- <td>
-  <a data-confirm="Are you sure?" class="destroy" rel="nofollow" data-method="delete" href="/books">Destroy</a>
- </td>
-</tr>
-<tr>
- <td>文章</td>
- <td>文章</td>
- <td>
-　<a class="show" href="/books">Show</a>
- </td>
- <td>
-  <a class="edit" href="/books/edit">Edit</a>
- </td>
- <td>
-  <a data-confirm="Are you sure?" class="destroy" rel="nofollow" data-method="delete" href="/books">Destroy</a>
- </td>
-</tr>
-<tr>
- <td>文章</td>
- <td>文章</td>
- <td>
-  <a class="show" href="/books">Show</a>
- </td>
-　<td>
-　<a class="edit" href="/books/edit">Edit</a>
-　</td>
-　<td>
-<a data-confirm="Are you sure?" class="destroy" rel="nofollow" data-method="delete" href="/books">Destroy</a>
-　</td>
-</tr>
-<tr>
- <td>文章</td>
- <td>文章</td>
- <td>
-  <a class="show" href="/books">Show</a>
- </td>
- <td>
-<a class="edit" href="/books/edit">Edit</a>
- </td>
- <td>
-  <a data-confirm="Are you sure?" class="destroy" rel="nofollow" data-method="delete" href="/books">Destroy</a>
- </td>
-</tr>
-<tr>
- <td>文章</td>
- <td>文章</td>
- <td>
-  <a class="show" href="/books">Show</a>
- </td>
- <td>
-  <a class="edit" href="/books/edit">Edit</a>
- </td>
- <td>
-  <a data-confirm="Are you sure?" class="destroy" rel="nofollow" data-method="delete" href="/books">Destroy</a>
- </td>
-</tr>
- <tr>
-  <td>文章</td>
-  <td>文章</td>
-  <td>
-   <a class="show" href="/books">Show</a>
-  </td>
-  <td>
-   <a class="edit" href="/books/edit">Edit</a>
-  </td>
-  <td>
-   <a data-confirm="Are you sure?" class="destroy" rel="nofollow" data-method="delete" href="/books">Destroy</a>
-  </td>
- </tr>
-　<tr>
-　 <td>文章</td>
-　 <td>文章</td>
-　 <td>
-　  <a class="show" href="/books">Show</a>
-　 </td>
-　 <td>
-　  <a class="edit" href="/books/edit">Edit</a>
-　 </td>
-　 <td>
-　  <a data-confirm="Are you sure?" class="destroy" rel="nofollow" data-method="delete" href="/books">Destroy</a>
-　 </td>
-　</tr>
+
+
  </tbody>
 </table>
 <h2>New book</h2>
- <form class="new_book" id="new_book" action="/books" accept-charset="UTF-8" method="post"><input name="utf8">
- <%= form_with model: book.index do |f| %>
- <form class="new book">
- <div class="error_explanation">
-  <h2>error prohibited this book from being saved.</h2>
-  <ul>
-   <li>
-    ::marker
-    "Body can't be blank"
-   </li>
-  </ul>
- </div>
+
+ <%= form_with model:@book do |f| %>
+
+
  <div class="field">
   <p>Title<p>
- <%= f.book_field :title %>
+ <%= f.text_field :title %>
  </div>
   <div class="field">
   <p>Body</p>
- <%= f.book_area :body %>
-  <textarea class="body">
-</textarea>
+ <%= f.text_area :body %>
+
  </div>
- <div class="actions">
-  <input type="submit" value="Create Book">
+
+
   <%= f.submit 'Create Book' %>
   <% end %>
- </div>
-</from>
+
+
  </body>
 </html>
