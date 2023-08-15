@@ -1,29 +1,10 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href= "show.scss">
-  <title>Bookers</title>
+ <h2>Title</h2>
+<p><%= @book.title %></p>
 
- <div class="header-logo">
-   <a href="/"></a>
- </head>
- <body>
-   <p id="notice">Book was successfully updated.</p>
+<h2>Body</h2>
+<p><%= @book.body %></p>
 
- <%= form_with model:@book do |f| %>
-<p>
-<strong>Title:</strong>
-<%= f.text_field :title %>
-</p>
 
-<p>
- <strong>Body:</strong>
- <%= f.text_area :body %>
-</p>
- <% end %>
-<a class="edit" href="edit">Edit</a>
-<a class="back" href="/">Back</a>
+<%= link_to 'Edit', edit_book_path(@book.id) %>
 
- </body>
-</html>
+<%= link_to 'Back', books_path %>
